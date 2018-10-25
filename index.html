@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>WebAgency</title>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/solid.css" integrity="sha384-osqezT+30O6N/vsMqwW8Ch6wKlMofqueuia2H7fePy42uC05rm1G+BUPSd2iBSJL" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/regular.css" integrity="sha384-4e3mPOi7K1/4SAx8aMeZqaZ1Pm4l73ZnRRquHFWzPh2Pa4PMAgZm8/WNh6ydcygU" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/brands.css" integrity="sha384-Px1uYmw7+bCkOsNAiAV5nxGKJ0Ixn5nChyW8lCK1Li1ic9nbO5pC/iXaq27X5ENt" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/fontawesome.css" integrity="sha384-BzCy2fixOYd0HObpx3GMefNqdbA7Qjcc91RgYeDjrHTIEXqiF00jKvgQG0+zY/7I" crossorigin="anonymous"/>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1><img src="images/logo.png" alt="Webagency" /></h1>
+				<nav>
+					<ul>
+						<li><a href="#home" class="active">Accueil</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="home" class="anchored">
+			<div class="carousel">
+				<div class="slides">
+					<figure id="slide1">
+						<img src="images/slider/bg1.jpg" alt="First slide">
+						<figcaption>
+							<h3><strong>WebAgency</strong> : L'agence de tous vos projets !</h3>
+							<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+						</figcaption>
+					</figure>
+					<figure id="slide2" class="active">
+						<img src="images/slider/bg2.jpg" alt="First slide">
+						<figcaption>
+							<h3><strong>WebAgency</strong> : L'agence de tous vos projets !</h3>
+							<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+						</figcaption>
+					</figure>
+				</div>
+				<ul class="navigation">
+					<li class="prev"><i class="fas fa-chevron-left"></i></li>
+					<li class="next"><i class="fas fa-chevron-right"></i></li>
+				</ul>
+				<ul class="pager">
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+		<section id="services" class="anchored">
+			<article>
+				<h2>Nos Services</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<div class="features">
+					<img class="main-feature" src="images/main-feature.png" alt="Fonctions" />
+					<ul class="feature-details">
+						<li class="feature-detail">
+							<div class="orbit"><i class="left fas fa-chart-line"></i></div>
+							<div>
+								<h3>UX design</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna incididunt ut labore aliqua.</p>
+							</div>
+						</li>
+						<li class="feature-detail">
+							<div class="orbit"><i class="fas fa-cubes"></i></div>
+							<div>
+								<h3>UI design</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna incididunt ut labore aliqua.</p>
+							</div>
+						</li>
+						<li class="feature-detail">
+							<div><div class="orbit"><i class="left fas fa-chart-pie"></i></div></div>
+							<div>
+								<h3>SEO</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna incididunt ut labore aliqua.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</section>
+		<section id="portfolio" class="anchored">
+			<article class="our-projects">
+				<h2>Nos projets</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<div class="filterview">
+					<ul class="criteria">
+						<li data-type="" class="active">All Works</li>
+						<li data-type="creative">Creative</li>
+						<li data-type="corporate">Corporate</li>
+						<li data-type="portfolio">Portfolio</li>
+					</ul>
+					<div class="data projects">
+						<figure data-type="creative portfolio">
+							<img src="images/portfolio/01.jpg" alt="Project">
+							<figcaption>
+								<h3>Comic Sans MS</h3>
+								<p>L'humour à toujour perçé dans l'informatique</p>
+								<div class="icon"><i class="far fa-eye"></i></div>
+							</figcaption>
+						</figure>
+						<figure data-type="portfolio">
+							<img src="images/portfolio/02.jpg" alt="Project">
+							<figcaption>
+								<h3>Polygonal Rabbit</h3>
+								<p>Apprennez les math en vous amusant.</p>
+								<div class="icon"><i class="far fa-eye"></i></div>
+							</figcaption>
+						</figure>
+						<figure data-type="creative corporate">
+							<img src="images/portfolio/03.jpg" alt="Project">
+							<figcaption>
+								<h3>Original Pompadour</h3>
+								<p>Le style depuis 1950</p>
+								<div class="icon"><i class="far fa-eye"></i></div>
+							</figcaption>
+						</figure>
+						<figure data-type="corporate">
+							<img src="images/portfolio/04.jpg" alt="Project">
+							<figcaption>
+								<h3>Industrial Publisher</h3>
+								<p>Fait nous confiance pour produire vos livres</p>
+								<div class="icon"><i class="far fa-eye"></i></div>
+							</figcaption>
+						</figure>
+						<figure data-type="corporate">
+							<img src="images/portfolio/05.jpg" alt="Project">
+							<figcaption>
+								<h3>Pull Shop</h3>
+								<p>Winter is comming.</p>
+								<div class="icon"><i class="far fa-eye"></i></div>
+							</figcaption>
+						</figure>
+						<figure data-type="creative portfolio">
+							<img src="images/portfolio/06.jpg" alt="Project">
+							<figcaption>
+								<h3>René Barjavel</h3>
+								<p>L'architechture du futur va faire des ravages.</p>
+								<div class="icon"><i class="far fa-eye"></i></div>
+							</figcaption>
+						</figure>
+						<figure data-type="corporate">
+							<img src="images/portfolio/07.jpg" alt="Project">
+							<figcaption>
+								<h3>4D Display</h3>
+								<p>L'écran qui brise le quatrième mur.</p>
+								<div class="icon"><i class="far fa-eye"></i></div>
+							</figcaption>
+						</figure>
+						<figure data-type="creative corporate">
+							<img src="images/portfolio/08.jpg" alt="Project">
+							<figcaption>
+								<h3>BE THEME</h3>
+								<p>Votre choix ? Nous l'avons : BE THEME !</p>
+								<div class="icon"><i class="far fa-eye"></i></div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section id="contact" class="anchored">
+			<div class="contact">
+				<div class="fixed">
+					<form action="">
+						<h2>Contact Info</h2>
+						<p><strong>WebAgency SAS</strong><br/>
+							25 Rue d'Hauteville 75010 Paris<br/>
+							<em>Tel :</em> 01 02 03 04 05</p>
+						<input type="text" name="name" placeholder="Name" />
+						<input type="email" name="email" placeholder="Email" />
+						<input type="text" name="subject" placeholder="Subject" />
+						<textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+						<div><input type="submit" value="Send Message"/></div>
+					</form>
+				</div>
+				<div id="map"></div>
+			</div>
+		</section>
+		<script>
+			function initMap() {
+				var point = {lat: 48.8733115, lng: 2.3476628};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 14,
+					center: point,
+					mapTypeControl: false,
+					disableDefaultUI: true,
+					gestureHandling: 'none',
+					zoomControl: true,
+					zoomControlOptions: {
+						position: google.maps.ControlPosition.RIGHT_BOTTOM
+					},
+					scaleControl: false,
+				});
+				var marker = new google.maps.Marker({
+					position: point,
+					map: map
+				});
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfN2NQ4weBX7AVW1PlLp6hwC8h9h__5yA&callback=initMap"></script>
+		<script src="carousel.js"></script>
+		<script src="projects.js"></script>
+		<script src="scrollspy.js"></script>
+	</body>
+</html>
