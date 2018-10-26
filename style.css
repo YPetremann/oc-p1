@@ -11,11 +11,6 @@
 */
 @import url('fonts/roboto.css');
 /* base page */
-@media (max-resolution: 150dpi) {
-  html {
-    font-size: 62.5%;
-  }
-}
 body {
   margin: 0;
   font-family: roboto-regular;
@@ -61,7 +56,7 @@ header nav > ul > li > a.active {
 .carousel {
   width: 100%;
   height: 0;
-  padding-top: 240px;
+  padding-top: 384px;
   position: relative;
 }
 .carousel .navigation {
@@ -395,6 +390,7 @@ section article .flex-article {
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  align-items: center;
   background: #4591b1;
   border: 2px solid #ffffff;
   color: #ffffff;
@@ -404,7 +400,15 @@ section article .flex-article {
   opacity: 1;
 }
 /* Base Desktop structure */
-@media (min-width: 640px) {
+@media (max-resolution: 150dpi) {
+  html {
+    font-size: 62.5%;
+  }
+  .carousel {
+    padding-top: 240px;
+  }
+}
+@media (max-resolution: 150dpi) and (min-width: 640px), (min-width: 1000px) {
   header {
     top: 0px;
   }
