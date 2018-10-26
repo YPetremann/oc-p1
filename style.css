@@ -45,12 +45,12 @@ header nav > ul > li > a {
   display: block;
   padding: 15px 15px;
   transition: border-color 0.5s ease;
-  border-bottom: 3px solid #5cadd300;
+  border-bottom: 3px solid rgba(92, 173, 211, 0);
   color: #777777;
   text-decoration: none;
 }
 header nav > ul > li > a.active {
-  border-color: #5cadd3ff;
+  border-color: #5cadd3;
 }
 .anchored {
   padding-top: 48px;
@@ -126,10 +126,10 @@ header nav > ul > li > a.active {
   text-align: center;
   padding: 5px 0;
   transition: all 1s ease;
-  border-bottom: 4px solid #5cadd300;
+  border-bottom: 4px solid rgba(92, 173, 211, 0);
 }
 .carousel .pager > li.active {
-  border-bottom: 4px solid #5cadd3ff;
+  border-bottom: 4px solid #5cadd3;
 }
 .carousel .slides {
   position: absolute;
@@ -370,7 +370,7 @@ section article .flex-article {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #00000077;
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0;
 }
 .projects figure figcaption h3,
@@ -420,8 +420,8 @@ section article .flex-article {
   header nav > ul > li > a {
     padding: 45px 15px;
     padding-top: 42px;
-    border-top: 3px solid #5cadd300;
-    border-bottom: 0px solid #5cadd300;
+    border-top: 3px solid rgba(92, 173, 211, 0);
+    border-bottom: 0px solid #5cadd3;
   }
   header nav > ul > li > a.active {
     border: none;
@@ -446,7 +446,7 @@ section article .flex-article {
 }
 /* flexbox */
 .contact {
-  background: #7BCAEF80;
+  background: rgba(123, 202, 239, 0.5);
   position: relative;
   min-height: 100vh;
   padding: 20px;
@@ -467,7 +467,7 @@ section article .flex-article {
   max-width: 345px;
 }
 .contact .fixed .form form {
-  background: #FFFFFFA0;
+  background: rgba(255, 255, 255, 0.66);
   padding: 12.5px;
   position: relative;
   display: flex;

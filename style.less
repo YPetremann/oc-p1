@@ -35,11 +35,11 @@ header {
 			display:block;
 			padding: 15px 15px;
 			transition: border-color 0.5s ease;
-			border-bottom: 3px solid #5cadd300;
+			border-bottom: 3px solid rgba(92, 173, 211, 0);
 			color:#777777;
 			text-decoration: none;
 			&.active {
-				border-color: #5cadd3ff;
+				border-color: rgba(92, 173, 211, 1);
 			}
 		}
 	}
@@ -109,9 +109,9 @@ header {
 			text-align: center;
 			padding: 5px 0;
 			transition: all 1s ease;
-			border-bottom: 4px solid #5cadd300;
+			border-bottom: 4px solid rgba(92, 173, 211, 0);
 			&.active{
-				border-bottom: 4px solid #5cadd3ff;
+				border-bottom: 4px solid rgba(92, 173, 211, 1);
 			}
 		}
 	}
@@ -334,7 +334,7 @@ section article {
 			bottom:0;
 			left:0;
 			right:0;
-			background:#00000077;
+			background: rgba(0, 0, 0, 0.5);
 			opacity:0;
 			h3, p {
 				margin:11px;
@@ -379,8 +379,8 @@ section article {
 			& > li > a {
 				padding: 45px 15px;
 				padding-top: 42px;
-				border-top: 3px solid #5cadd300;
-				border-bottom: 0px solid #5cadd300;
+				border-top: 3px solid rgba(92, 173, 211, 0);
+				border-bottom: 0px solid rgba(92, 173, 211, 1);
 				&.active {
 					border: none;
 					border-top: 3px solid #5cadd3;
@@ -408,7 +408,7 @@ section article {
 
 /* flexbox */
 .contact {
-	background: #7BCAEF80;
+	background: rgba(123, 202, 239, 0.5);
 	position: relative;
 	min-height: 100vh;
 	padding:20px;
@@ -426,7 +426,7 @@ section article {
 			width:100%;
 			max-width:345px;
 			form {
-				background:#FFFFFFA0;
+				background:rgba(255, 255, 255, 0.66);
 				padding:12.5px;
 				position:relative;
 				&>* {margin:7.5px;}
