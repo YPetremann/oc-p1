@@ -18,6 +18,9 @@ body {
   margin: 0;
   font-family: roboto-regular;
 }
+.hidden {
+  display: none;
+}
 /* Base Mobile structure */
 header {
   background: #ffffff;
@@ -183,7 +186,7 @@ header nav > ul > li > a.active {
 .carousel .slides > figure figcaption strong {
   color: #5cadd3;
 }
-section article h2 {
+section article > h2 {
   font-size: 3.2rem;
   text-align: center;
   margin-top: 53px;
@@ -194,7 +197,7 @@ section article h2 {
   text-transform: uppercase;
   position: relative;
 }
-section article h2:before {
+section article > h2:before {
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -203,7 +206,7 @@ section article h2:before {
   border-bottom: 1px solid #ebebeb;
   margin-left: -70px;
 }
-section article h2:after {
+section article > h2:after {
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -217,7 +220,7 @@ section article h2:after {
   border: 5px solid #ffffff;
   border-radius: 100%;
 }
-section article h2 + p {
+section article > p {
   margin: 10px auto;
   text-align: center;
   max-width: 450px;
@@ -442,11 +445,6 @@ section article .flex-article {
   }
 }
 /* flexbox */
-.middle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .contact {
   background: #7BCAEF80;
   position: relative;
@@ -516,7 +514,4 @@ section article .flex-article {
   left: 0;
   right: 0;
   z-index: -1;
-}
-.small {
-  margin: 10px 0;
 }

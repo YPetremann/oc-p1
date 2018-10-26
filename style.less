@@ -10,6 +10,9 @@ body {
 	margin:0;
 	font-family: roboto-regular;
 }
+.hidden {
+	display:none;
+}
 /* Base Mobile structure */
 header {
 	background: #ffffff;
@@ -157,7 +160,7 @@ header {
 	}
 }
 section article {
-	& h2 {
+	&>h2 {
 		font-size: 3.2rem;
 		text-align: center;
 		margin-top:53px;
@@ -189,11 +192,11 @@ section article {
 			border: 5px solid #ffffff;
 			border-radius: 100%;
 		}
-		&+p{
-			margin:10px auto;
-			text-align: center;
-			max-width:450px;
-		}
+	}
+	&>p{
+		margin:10px auto;
+		text-align: center;
+		max-width:450px;
 	}
 	& .flex-article{
 		max-width:1140px;
@@ -404,11 +407,6 @@ section article {
 }
 
 /* flexbox */
-.middle {
-	#flex.apply();
-	@flex-direction: column;
-	@flex-align-vertical: center;
-}
 .contact {
 	background: #7BCAEF80;
 	position: relative;
@@ -469,7 +467,4 @@ section article {
 		right:0;
 		z-index: -1;
 	}
-}
-.small {
-	margin:10px 0;
 }
