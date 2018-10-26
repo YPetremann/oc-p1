@@ -1,14 +1,3 @@
-/* Usage :
-.your.selector {
-	#flex.default();
-	@flex-direction: row | row-reverse | column | column-reverse | ... ;
-	@flex-wrap: nowrap | wrap | wrap-reverse | ... ;
-	@flex-align-horizontal: left | center | right | stretch | space-between | space-around | space-evenly | ... ;
-	@flex-align-vertical: top | center | bottom | stretch | space-between | space-around | space-evenly | ... ;
-	@flex-align-items: flex-start | flex-end | center | baseline | stretch;
-	#flex.apply();
-}
-*/
 @import url('fonts/roboto.css');
 /* base page */
 body {
@@ -243,14 +232,14 @@ section article .flex-article {
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-content: flex-start;
 }
 .features > ul > li {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   align-content: flex-end;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .orbit {
   width: 62px;
@@ -402,7 +391,7 @@ section article .flex-article {
 /* Base Desktop structure */
 @media (max-resolution: 150dpi) {
   html {
-    font-size: 62.5%;
+    font-size: 80%;
   }
   .carousel {
     padding-top: 240px;

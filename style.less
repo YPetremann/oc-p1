@@ -214,13 +214,13 @@ section article {
 		#flex.apply();
 		@flex-direction: column;
 		@flex-wrap: nowrap;
-		@flex-align-horizontal: center;
+		@flex-align-horizontal: left;
 		@flex-align-vertical: center;
 		&>li {
 			#flex.apply();
 			@flex-direction: row;
 			@flex-wrap: nowrap;
-			@flex-align-horizontal: center;
+			@flex-align-horizontal: left;
 			@flex-align-vertical: bottom;
 		}
 	}
@@ -363,7 +363,7 @@ section article {
 /* Base Desktop structure */
 @media (max-resolution: 150dpi) {
 	html {
-		font-size:62.5%;
+		font-size:80%;
 	}
 	.carousel {
 		padding-top: 240px;

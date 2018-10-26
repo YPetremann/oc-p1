@@ -1,0 +1,14 @@
+{
+    "name": "WebAgency",
+    "short_name": "WebAgency",
+    "icons": [
+        {
+            "src": "/images/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#5cadd3",
+    "background_color": "#5cadd3",
+    "display": "standalone"
+}
