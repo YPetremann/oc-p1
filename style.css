@@ -113,7 +113,7 @@ header nav > ul > li > a.active {
   font-size: 1.2rem;
   display: flex;
   align-content: flex-end;
-  justify-content: space-arround;
+  justify-content: space-around;
   align-items: flex-end;
   list-style: none;
 }
