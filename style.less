@@ -312,6 +312,8 @@ section article {
 	order:2;
 }
 .projects {
+	margin:auto;
+	max-width: 1160px;
 	#flex.apply();
 	@flex-direction: row;
 	@flex-wrap: wrap;
@@ -401,9 +403,7 @@ section article {
 	}
 }
 
-
 /* flexbox */
-
 .middle {
 	#flex.apply();
 	@flex-direction: column;
@@ -413,11 +413,54 @@ section article {
 	background: #7BCAEF80;
 	position: relative;
 	min-height: 100vh;
+	padding:20px;
 	#flex.apply();
-	@flex-direction: row;
-	@flex-align-vertical: stretch;
-	@flex-align-horizontal: stretch;
-	@flex-align-items: stretch;
+	.fixed {
+		margin:auto;
+		width:100%;
+		max-width:1140px;
+		#flex.apply();
+		@flex-direction: row;
+		@flex-align-vertical: center;
+		@flex-align-horizontal: right;
+		@flex-align-items: center;
+		.form {
+			width:100%;
+			max-width:345px;
+			form {
+				background:#FFFFFFA0;
+				padding:12.5px;
+				position:relative;
+				&>* {margin:7.5px;}
+				h2 {font-size:1.8rem; font-family: roboto-medium;}
+				p {font-size: 1.1rem;}
+				em {text-decoration: underline dotted #777777;}
+				input, textarea {
+					//align-self: stretch;
+					padding:10px 12px;
+					font-family: roboto-regular;
+					font-size: 1.2rem;
+					background: #ffffff;
+					border:1px solid #cccccc;
+					border-radius: 5px;
+					resize: vertical;
+				}
+				#flex.apply();
+				@flex-direction:column;
+				@flex-align-vertical: center;
+				@flex-align-horizontal: stretch;
+				@flex-align-items: stretch;
+				input[type=submit] {
+					background:#5cadd3;
+					font-size:1.1rem;
+					color:#ffffff;
+					border: none;
+					border-bottom: 3px solid #468cad;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
 	#map {
 		position:absolute;
 		top:0;
@@ -425,52 +468,6 @@ section article {
 		left:0;
 		right:0;
 		z-index: -1;
-	}
-	.fixed {
-		width:100%;
-		max-width:1140px;
-		margin:auto;
-		padding:20px;
-		#flex.apply();
-		@flex-direction: row;
-		@flex-align-vertical: center;
-		@flex-align-horizontal: right;
-		@flex-align-items: center;
-	}
-	form {
-		background:#FFFFFFA0;
-		padding:12.5px;
-		position:relative;
-		max-width:345px;
-		&>* {margin:7.5px;}
-		h2 {font-size:1.8rem; font-family: roboto-medium;}
-		p {font-size: 1.1rem;}
-		em {text-decoration: underline dotted #777777;}
-		input, textarea {
-			//align-self: stretch;
-			padding:10px 12px;
-			background: #ffffff;
-			border:1px solid #cccccc;
-			border-radius: 5px;
-			resize: vertical;
-		}
-		textarea {
-
-			width:190px;
-		}
-		#flex.apply();
-		@flex-direction:column;
-		@flex-align-vertical: center;
-		@flex-align-horizontal: stretch;
-		@flex-align-items: stretch;
-		input[type=submit] {
-			background:#5cadd3;
-			font-size:1.1rem;
-			color:#ffffff;
-			border: none;
-			border-bottom: 3px solid #468cad;
-			border-radius: 5px;
-		}
 	}
 }
 .small {

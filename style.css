@@ -343,6 +343,8 @@ section article .flex-article {
   order: 2;
 }
 .projects {
+  margin: auto;
+  max-width: 1160px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -449,11 +451,63 @@ section article .flex-article {
   background: #7BCAEF80;
   position: relative;
   min-height: 100vh;
+  padding: 20px;
+  display: flex;
+}
+.contact .fixed {
+  margin: auto;
+  width: 100%;
+  max-width: 1140px;
   display: flex;
   flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contact .fixed .form {
+  width: 100%;
+  max-width: 345px;
+}
+.contact .fixed .form form {
+  background: #FFFFFFA0;
+  padding: 12.5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-content: stretch;
-  justify-content: stretch;
   align-items: stretch;
+}
+.contact .fixed .form form > * {
+  margin: 7.5px;
+}
+.contact .fixed .form form h2 {
+  font-size: 1.8rem;
+  font-family: roboto-medium;
+}
+.contact .fixed .form form p {
+  font-size: 1.1rem;
+}
+.contact .fixed .form form em {
+  text-decoration: underline dotted #777777;
+}
+.contact .fixed .form form input,
+.contact .fixed .form form textarea {
+  padding: 10px 12px;
+  font-family: roboto-regular;
+  font-size: 1.2rem;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+.contact .fixed .form form input[type=submit] {
+  background: #5cadd3;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-bottom: 3px solid #468cad;
+  border-radius: 5px;
 }
 .contact #map {
   position: absolute;
@@ -462,60 +516,6 @@ section article .flex-article {
   left: 0;
   right: 0;
   z-index: -1;
-}
-.contact .fixed {
-  width: 100%;
-  max-width: 1140px;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: flex-end;
-  align-items: center;
-}
-.contact form {
-  background: #FFFFFFA0;
-  padding: 12.5px;
-  position: relative;
-  max-width: 345px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: stretch;
-  align-items: stretch;
-}
-.contact form > * {
-  margin: 7.5px;
-}
-.contact form h2 {
-  font-size: 1.8rem;
-  font-family: roboto-medium;
-}
-.contact form p {
-  font-size: 1.1rem;
-}
-.contact form em {
-  text-decoration: underline dotted #777777;
-}
-.contact form input,
-.contact form textarea {
-  padding: 10px 12px;
-  background: #ffffff;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  resize: vertical;
-}
-.contact form textarea {
-  width: 190px;
-}
-.contact form input[type=submit] {
-  background: #5cadd3;
-  font-size: 1.1rem;
-  color: #ffffff;
-  border: none;
-  border-bottom: 3px solid #468cad;
-  border-radius: 5px;
 }
 .small {
   margin: 10px 0;
